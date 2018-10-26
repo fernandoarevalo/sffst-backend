@@ -38,6 +38,7 @@ app.use(morgan('dev'));
 var polizasRoutes = require('./app/routes/polizas');
 var tipoPolizasRoutes = require('./app/routes/tipo-polizas');
 app.use('/api', polizasRoutes);
+app.use('/api', tipoPolizasRoutes);
 
 //conexión a base de datos
 mongoose.connect(process.env.URLDB, { useNewUrlParser: true }, (err, res) => {

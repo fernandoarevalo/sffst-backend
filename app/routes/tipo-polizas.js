@@ -22,7 +22,7 @@ tipoPolizasRouter.get('/v1/tipo-polizas', (req, res) => {
 /**
  * Crear un tipo de póliza de seguro
  */
-polizaSegurosRouter.post('/v1/tipo-poliza', (req, res) => {
+tipoPolizasRouter.post('/v1/tipo-poliza', (req, res) => {
     let body = req.body;
 
     let tipo_poliza = new TipoPolizas({
