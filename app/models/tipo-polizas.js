@@ -3,9 +3,9 @@ const mongoose = require('mongoose');
 let Schema = mongoose.Schema;
 
 let tipoPolizaSchema = new Schema({
-    id: {
+    ind : {
         type: String,
-        required: [true, 'Es necesario ingresar id de póliza']
+        required : [true, 'Es necesario parametro de búsqueda']
     },
     nombre: {
         type: String,
