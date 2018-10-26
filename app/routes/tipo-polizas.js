@@ -26,7 +26,8 @@ polizaSegurosRouter.post('/v1/tipo-poliza', (req, res) => {
     let body = req.body;
 
     let tipo_poliza = new TipoPolizas({
-        tipo: body.tipo,
+        id: body.id,
+        nombre: body.nombre,
         valor: body.valor
     });
 

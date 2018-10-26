@@ -3,9 +3,13 @@ const mongoose = require('mongoose');
 let Schema = mongoose.Schema;
 
 let tipoPolizaSchema = new Schema({
-    tipo: {
+    id: {
         type: String,
-        required: [true, 'Es necesario ingresar tipo de poliza']
+        required: [true, 'Es necesario ingresar id de póliza']
+    },
+    nombre: {
+        type: String,
+        required: [true, 'Es necesario ingresar tipo de póliza']
     },
     valor: {
         type: Number,
