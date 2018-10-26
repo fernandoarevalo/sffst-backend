@@ -4,7 +4,7 @@ const TipoPolizas = require('../models/tipo-polizas');
 const _ = require('underscore');
 
 /**
- * Obtener todos los articulos
+ * Obtener todos los tipos de pólizas
  */
 tipoPolizasRouter.get('/v1/tipo-polizas', (req, res) => {
     TipoPolizas.find({}, (err, tiposPolizas) => {
